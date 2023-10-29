@@ -32,17 +32,21 @@
 
 import SwiftUI
 
-struct WelcomeView: View {
+struct WelcomeBackgroundImage: View {
   var body: some View {
-    ZStack {
-      WelcomeBackgroundImage()
-      WelcomeMessageView()
+    GeometryReader { geometry in
+      Image("welcome-background", bundle: nil)
+        .resizable()
+        .aspectRatio(1 / 1, contentMode: .fill)
+        .frame(width: geometry.size.width, alignment: .center)
+        .edgesIgnoringSafeArea(.all)
+        .saturation(0.5)
+        .blur(radius: 5)
+        .opacity(0.08)
     }
   }
 }
 
-struct WelcomeView_Previews: PreviewProvider {
-  static var previews: some View {
-    WelcomeView()
-  }
+#Preview {
+  WelcomeBackgroundImage()
 }

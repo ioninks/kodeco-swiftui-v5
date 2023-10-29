@@ -27,6 +27,16 @@
 		57EF341424E89F92004ABEB2 /* KuchiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EF340024E89F91004ABEB2 /* KuchiApp.swift */; };
 		57F8DD6926EEC01300153B9F /* HorizontallyAlignedLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F8DD6826EEC01300153B9F /* HorizontallyAlignedLabelStyle.swift */; };
 		57F8DD6A26EEC01300153B9F /* HorizontallyAlignedLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F8DD6826EEC01300153B9F /* HorizontallyAlignedLabelStyle.swift */; };
+		B5ED393D2AEEA6B3003D26FE /* WelcomeBackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED393C2AEEA6B3003D26FE /* WelcomeBackgroundImage.swift */; };
+		B5ED393E2AEEA6B3003D26FE /* WelcomeBackgroundImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED393C2AEEA6B3003D26FE /* WelcomeBackgroundImage.swift */; };
+		B5ED39402AEEA834003D26FE /* LogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED393F2AEEA834003D26FE /* LogoImage.swift */; };
+		B5ED39412AEEA834003D26FE /* LogoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED393F2AEEA834003D26FE /* LogoImage.swift */; };
+		B5ED39432AEEA8A8003D26FE /* WelcomeMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED39422AEEA8A8003D26FE /* WelcomeMessageView.swift */; };
+		B5ED39442AEEA8A8003D26FE /* WelcomeMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED39422AEEA8A8003D26FE /* WelcomeMessageView.swift */; };
+		B5ED39462AEEA944003D26FE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED39452AEEA944003D26FE /* RegisterView.swift */; };
+		B5ED39472AEEA944003D26FE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED39452AEEA944003D26FE /* RegisterView.swift */; };
+		B5ED39492AEEB010003D26FE /* BorderedViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED39482AEEB010003D26FE /* BorderedViewModifier.swift */; };
+		B5ED394A2AEEB010003D26FE /* BorderedViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ED39482AEEB010003D26FE /* BorderedViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +55,11 @@
 		57EF341124E89F92004ABEB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57EF341224E89F92004ABEB2 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		57F8DD6826EEC01300153B9F /* HorizontallyAlignedLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontallyAlignedLabelStyle.swift; sourceTree = "<group>"; };
+		B5ED393C2AEEA6B3003D26FE /* WelcomeBackgroundImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBackgroundImage.swift; sourceTree = "<group>"; };
+		B5ED393F2AEEA834003D26FE /* LogoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImage.swift; sourceTree = "<group>"; };
+		B5ED39422AEEA8A8003D26FE /* WelcomeMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeMessageView.swift; sourceTree = "<group>"; };
+		B5ED39452AEEA944003D26FE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		B5ED39482AEEB010003D26FE /* BorderedViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +111,10 @@
 		579CB98926EA18AA0009C09F /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
+				B5ED393B2AEEA698003D26FE /* Components */,
 				579CB98A26EA1BE30009C09F /* WelcomeView.swift */,
 				57F8DD6826EEC01300153B9F /* HorizontallyAlignedLabelStyle.swift */,
+				B5ED39452AEEA944003D26FE /* RegisterView.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -148,6 +165,17 @@
 				57EF341224E89F92004ABEB2 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		B5ED393B2AEEA698003D26FE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B5ED393C2AEEA6B3003D26FE /* WelcomeBackgroundImage.swift */,
+				B5ED393F2AEEA834003D26FE /* LogoImage.swift */,
+				B5ED39422AEEA8A8003D26FE /* WelcomeMessageView.swift */,
+				B5ED39482AEEB010003D26FE /* BorderedViewModifier.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,12 +279,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5ED39462AEEA944003D26FE /* RegisterView.swift in Sources */,
 				57EF341324E89F92004ABEB2 /* KuchiApp.swift in Sources */,
+				B5ED39492AEEB010003D26FE /* BorderedViewModifier.swift in Sources */,
 				57349BB8298132EB00BA0ACF /* Profile.swift in Sources */,
 				579CB98B26EA1BE30009C09F /* WelcomeView.swift in Sources */,
+				B5ED39432AEEA8A8003D26FE /* WelcomeMessageView.swift in Sources */,
+				B5ED39402AEEA834003D26FE /* LogoImage.swift in Sources */,
 				57F8DD6926EEC01300153B9F /* HorizontallyAlignedLabelStyle.swift in Sources */,
 				57349BBA298132EB00BA0ACF /* Settings.swift in Sources */,
 				57349BB6298132EB00BA0ACF /* UserManager.swift in Sources */,
+				B5ED393D2AEEA6B3003D26FE /* WelcomeBackgroundImage.swift in Sources */,
 				57578FDE24E9D943003465A4 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,12 +298,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5ED39472AEEA944003D26FE /* RegisterView.swift in Sources */,
 				57EF341424E89F92004ABEB2 /* KuchiApp.swift in Sources */,
+				B5ED394A2AEEB010003D26FE /* BorderedViewModifier.swift in Sources */,
 				57349BB9298132EB00BA0ACF /* Profile.swift in Sources */,
 				579CB98C26EA1BE30009C09F /* WelcomeView.swift in Sources */,
+				B5ED39442AEEA8A8003D26FE /* WelcomeMessageView.swift in Sources */,
+				B5ED39412AEEA834003D26FE /* LogoImage.swift in Sources */,
 				57F8DD6A26EEC01300153B9F /* HorizontallyAlignedLabelStyle.swift in Sources */,
 				57349BBB298132EB00BA0ACF /* Settings.swift in Sources */,
 				57349BB7298132EB00BA0ACF /* UserManager.swift in Sources */,
+				B5ED393E2AEEA6B3003D26FE /* WelcomeBackgroundImage.swift in Sources */,
 				57578FDF24E9D943003465A4 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
